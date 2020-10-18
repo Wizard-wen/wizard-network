@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="file" />
+    <button id="button">上传</button>
+</div>
+<script>
+    const input = document.getElementsByTagName('input')[0];
+    const button = document.getElementById('button');
+    input.addEventListener('change', (event) => {
+      const [file] = event.target.files;
+      if (!file) return;
+    })
+</script>
+</body>
+</html>
